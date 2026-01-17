@@ -18,6 +18,7 @@ const db = new sqlite3.Database('./base.sqlite3', (err) => {
 
 // --- ENDPOINTS ---
 
+
 // d) Endpoint para insertar (POST)
 app.post('/insert', jsonParser, function (req, res) {
     const { todo } = req.body;
